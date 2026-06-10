@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Enhancer — Setup</title>
+  <link rel="stylesheet" href="onboarding.css">
+</head>
+<body>
+  <div class="onboarding-container">
+    <div class="onboarding-header">
+      <div class="onboarding-icon">&#10022;</div>
+      <h1 class="onboarding-title">Prompt Enhancer</h1>
+      <p class="onboarding-subtitle">Enhance any AI prompt with one click</p>
+    </div>
+
+    <div class="onboarding-cards" id="cards">
+      <div class="onboarding-card" id="card-openrouter">
+        <div class="card-title-row">
+          <h2 class="card-title">Add Your API Key</h2>
+          <span class="card-badge">Better prompts</span>
+        </div>
+        <p class="card-desc">Use your own OpenRouter, OpenAI, or Gemini API key. Your key, your usage.</p>
+        <div class="card-input-group">
+          <input type="password" id="openrouter-key-input" placeholder="Paste your API key here" autocomplete="off" spellcheck="false">
+          <a href="https://openrouter.ai/settings/keys" target="_blank" rel="noopener noreferrer" class="card-link">Get a free key at OpenRouter &rarr;</a>
+        </div>
+        <button class="card-btn card-btn-primary" id="btn-save-key">Save &amp; Get Started</button>
+        <div class="card-divider">or</div>
+        <button class="card-btn card-btn-secondary" id="btn-continue-builtin">Continue without key</button>
+      </div>
+    </div>
+
+    <div class="onboarding-success" id="success-msg" style="display:none;">
+      <div class="success-icon">&#10003;</div>
+      <h2 class="success-heading">You're all set</h2>
+      <p class="success-text">Visit any website, click inside a text field, and press the &#10022; button to enhance your prompt.</p>
+    </div>
+  </div>
+
+  <script src="onboarding.js"></script>
+</body>
+</html>
